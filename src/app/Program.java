@@ -110,6 +110,84 @@ public class Program {
         System.out.println(s5);
         System.out.println(s6);*/
 
+        // aula estrutura condicional -------------------------------------
+       /* int hora;
+
+        System.out.println("Quantas horas?");
+        hora = sc.nextInt();
+
+        if(hora < 12) {
+            System.out.println("Bom dia");
+        }
+        else if (hora < 18 ) {
+            System.out.println("boa tarde");
+        }
+        else {
+            System.out.println("Boa noite");
+        }
+
+        //EXERCICIO 1 ---------------------------------------------
+        double nota1;
+        double nota2;
+        double som;
+
+        System.out.print("Digite a primeira nota: ");
+        nota1 = sc.nextDouble();
+        System.out.print("Digite a segunda nota: ");
+        nota2 = sc.nextDouble();
+
+        som = nota1 + nota2;
+
+        if(som > 60.00) {
+            System.out.println("nota final = " + som);
+            System.out.println("APROVADO");
+        }
+        else {
+            System.out.println("nota final = " + som);
+            System.out.println("REPROVADO");
+        }
+
+        //EXERCICIO 2 ----------------------------------------
+        int n1;
+        int n2;
+        int n3;
+
+        System.out.print("Primeiro valor: ");
+        n1 = sc.nextInt();
+        System.out.print("Segundo valor: ");
+        n2 = sc.nextInt();
+        System.out.print("terceiro valor: ");
+        n3 = sc.nextInt();
+
+        if (n1 < n2) {
+            System.out.println("MENOR = " + n1);
+        }
+        else if (n2 < n3) {
+            System.out.println("MENOR = " + n2);
+        }
+        else {
+            System.out.println("MENOR = " + n3);
+        }*/
+
+        double minutos;
+        double som;
+        double preco = 50.00;
+
+        System.out.print("Digite a quantidade de minutos: ");
+        minutos = sc.nextDouble();
+
+
+        if(minutos <= 100) {
+            System.out.printf("Valor a pagar : R$ %.2f%n  " , preco);
+        }
+        else {
+            preco = preco + (minutos - 100) * 2;
+            System.out.printf("Valor a pagar : R$ %.2f%n  " , preco );
+        }
+
+
+
+
         sc.close();
 
     }
