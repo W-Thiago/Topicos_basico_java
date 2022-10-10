@@ -110,7 +110,7 @@ public class Program {
         System.out.println(s5);
         System.out.println(s6);*/
 
-        // aula estrutura condicional -------------------------------------
+        // aula estrutura condicional  if else -------------------------------------
        /* int hora;
 
         System.out.println("Quantas horas?");
@@ -167,10 +167,10 @@ public class Program {
         }
         else {
             System.out.println("MENOR = " + n3);
-        }*/
+        }
 
+        //EXERCICIO 3 ----------------------------------------
         double minutos;
-        double som;
         double preco = 50.00;
 
         System.out.print("Digite a quantidade de minutos: ");
@@ -181,12 +181,48 @@ public class Program {
             System.out.printf("Valor a pagar : R$ %.2f%n  " , preco);
         }
         else {
-            preco = preco + (minutos - 100) * 2;
+            preco += + (minutos - 100) * 2;
             System.out.printf("Valor a pagar : R$ %.2f%n  " , preco );
         }
 
 
+         // aula = Estrutura repetitiva "enquanto (while)  = Quando usar: quando não se sabe previamente a quantidade de repetições que será realizada.        //regra while   V: executa e volta
+        // É uma estrutura de controle que  repete um bloco de comandos enquanto uma condição for verdadeira.                                                                  F: pula fora
 
+        int number = sc.nextInt();
+        int som = 0;
+        sc.nextLine();
+
+        while (number != 0) {
+            som += number;                     // operador de atribuição acumulativa   (soma + soma = soma+=)
+            number = sc.nextInt();
+        }
+
+        System.out.println("soma = " + som);*/
+
+
+         // AULA =  Estrutura repetitiva "para" (for) = Quando usar: quando se sabe previamente a quantidade de repetições, ou o intervalo de valores.
+        // é uma estrutura de controle que repete um bloco de comandos para um certo intervalo de valores.
+
+        int number = sc.nextInt(); // aqui é a quantidades de vezez que vai ser repetida
+        int som = 0;
+
+        for (int i = 0; i < number; i++) {
+            int x = sc.nextInt(); //aqui foi criada outra vaiavel
+            som += x;
+
+        }
+        System.out.println("soma = " + som);
+
+        //Importante  Perceba que a estrutura "para" é ótima para se fazer uma repetição baseada em uma CONTAGEM:
+        for (int i=0; i<5; i++) {
+            System.out.println("Valor de i: " + i);
+        }
+
+        //Contagem regressiva
+        for (int i=4; i>=0; i--) {
+            System.out.println("Valor de i: " + i);
+        }
 
         sc.close();
 
