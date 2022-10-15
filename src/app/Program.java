@@ -198,7 +198,7 @@ public class Program {
             number = sc.nextInt();
         }
 
-        System.out.println("soma = " + som);*/
+        System.out.println("soma = " + som);
 
 
          // AULA =  Estrutura repetitiva "para" (for) = Quando usar: quando se sabe previamente a quantidade de repetições, ou o intervalo de valores.
@@ -222,7 +222,86 @@ public class Program {
         //Contagem regressiva
         for (int i=4; i>=0; i--) {
             System.out.println("Valor de i: " + i);
+        } */
+
+
+        /* -------------------------------------------------------
+          // aula Restrições e convenções para nomes em JAVA
+          .Não pode começar com dígito: use uma letra ou _
+          .não usar acentos ou til
+          .não pode ter espaço em branco
+          .sugestão: use nomes que tenham um significado
+
+         Convenções
+         Camel Case: LastName    nesses exemplos iniciar com letra minuscula, quando trocar a palavra colocar a primeira letra Maiscula.
+        . pacotes
+        . atributos
+        .métodos
+        . variaveis e parametros
+
+        • Pascal Case: ProductService  na classe sempre usar a primeira letra Maiscula
+            • classes
+
+         exemplos -> public class Account { }
+
+
+        // aula Funções interessantes para String
+
+        String original = "abcde FGHIJ ABC abc DEFG ";
+        String s01 = original.toLowerCase(); // Minuscula
+        String s02 = original.toUpperCase(); //maiscula
+        String s03 = original.trim();       // cortar os espaços
+        String s04 = original.substring(2); // iniciar a String a partir do 2
+        String s05 = original.substring(2, 9);
+        String s06 = original.replace('a', 'x');  // Trocar a String NO EXEMPLO TROCOU A POR X
+        String s07 = original.replace("abc", "xy"); // Trocar a String NO EXEMPLO TROCOU ABC POR XY
+        int i = original.indexOf("bc"); // trocar bc pela variavel = i
+        int j = original.lastIndexOf("bc"); // trocar bc pela variavel = j
+        System.out.println("Original: -" + original + "-");
+        System.out.println("toLowerCase: -" + s01 + "-");
+        System.out.println("toUpperCase: -" + s02 + "-");
+        System.out.println("trim: -" + s03 + "-");
+        System.out.println("substring(2): -" + s04 + "-");
+        System.out.println("substring(2, 9): -" + s05 + "-");
+        System.out.println("replace('a', 'x'): -" + s06 + "-");
+        System.out.println("replace('abc', 'xy'): -" + s07 + "-");
+        System.out.println("Index of 'bc': " + i);
+        System.out.println("Last index of 'bc': " + j);
+        System.out.println("\n");
+
+
+        // Operação split = cria um vetor, tem que colocar '  '
+
+
+        String s = "potato apple lemon java ";
+        String[] vect = s.split(" ");
+        String s1 = vect[0];
+        String s2 = vect[1];
+        String s3 = vect[2];
+        String s4 = vect[3];
+
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+        System.out.println(s4);
+        */
+
+
+        System.out.println(" enter three numbers : ");
+        double number1 = sc.nextInt();
+        double number2 = sc.nextInt();
+        double number3 = sc.nextInt();
+
+        if(number1 > number2 && number1 > number3 ) {
+            System.out.println("Maior number 1 =" + number1);
         }
+        else if (number2 > number3) {
+            System.out.println("Maior number 2 = " + number2);
+        }
+        else {
+            System.out.println("Maior number 3 = " + number3);
+        }
+
 
         sc.close();
 
